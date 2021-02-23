@@ -1,0 +1,55 @@
+    /*DOCUMENT INFORMATION
+    - Document: LIVRE thème
+    - version: 1.0.0
+    - Author: QL
+
+*/
+
+    /*COLORS
+    -defaut body text
+    -h1
+    -h2
+    -h3
+
+    - button
+    - button: hover
+
+*/
+
+    /*FONTS
+    -default Lobster
+    -subtitle
+*/
+
+    /* CSS DIRECTORY
+    1. =GLOBAL
+    2. =HEADER
+*/
+
+/*GLOBAL
+=========================*/
+
+html{
+    background-color: cadetblue;
+}
+
+h1{
+    font-family: 'Arial', 'sans-serif' ;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: 300;
+    word-spacing: 5px;
+}
+
+
+/*HEADER
+====================*/
+
+
+
+
+
+/*CONNEXION======================*/
+
+
+

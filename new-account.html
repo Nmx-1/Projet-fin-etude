@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!--Icons--------------------------------------------->
+    <!--Icons-->
     <script src="https://kit.fontawesome.com/995ae30709.js" crossorigin="anonymous"></script>
-    <!--Styles--------------------------------------------->
+    <!--Styles-------------------------------------------------------------------------------------->
     <link rel="stylesheet" href="/ressources/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Document</title>
 </head>
 
 <body>
@@ -70,32 +70,74 @@
         </nav>
     </header>
 
-    <!--FORMULAIRE OUBLIE MOT DE PASSE------------------------------------------------------------->
+
+    <!--FORMULAIRE NOUVEAU COMPTE------------------------------------------------------------------->
     <section>
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <form>
-                        <div>
-                            <h2>Mot de passe oublié ?</h2>
-                            <hr>
-                            <p>Saisissez votre email ci-dessous pour réinitialiser votre mot de passe.
-                            </p>
-                        </div>
-                        <!--Email------------------------------------------------------------------->
-                        <div class="form-group box">
-                            <label class="" for="email"></label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-                        </div>
-                        <!--Bouton------------------------------------------------------------------>
-                        <div>
-                            <a class="btn btn-dark" href="">Valider</a>
-                        </div>
-                    </form>
+            <form class="new-account">
+                <div>
+                    <h2 class="">Créer un compte</h2>
+                    <hr>
                 </div>
-            </div>
+                <!--Nom et prénom------------------------------------------------------------------->
+                <div class="user">
+                    <label class="intitule-required" for="lastname">Nom* :</label>
+                    <input type="text" class="form-control" id="lastname">
+                    <!--///////////////////////////////////////////////////////////-->
+                    <label class="intitule-required" for="firstname">Prénom* :</label>
+                    <input type="text" class="form-control" id="firstname">
+                    <!--Civilité-------------------------------------------------------------------->
+                    <div><label class="intitule-required">Civilité* :</label></div>
+                    <!--Choix 1-->
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Mme</label>
+                    </div>
+                    <!--Choix 2-->
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Mlle</label>
+                    </div>
+                    <!--Choix 3-->
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                            value="option3">
+                        <label class="form-check-label" for="inlineRadio3">M.</label>
+                    </div>
+                </div>
+                <!--Email--------------------------------------------------------------------------->
+                <div class="mail-adress">
+                    <label class="intitule-required" for="email">Adresse Mail* :</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                </div>
+                <!--Mot de passe-------------------------------------------------------------------->
+                <div>
+                    <label class="intitule-required" for="password">Mot de passe* :</label>
+                    <input type="password" class="form-control" id="password">
+                </div>
+                <!--Confirmation mot de passe------------------------------------------------------->
+                <div>
+                    <label class="intitule-required" for="password">Confirmer le mot de passe* :</label>
+                    <input type="password" class="form-control" id="password">
+                </div>
+                <!--Newsletter---------------------------------------------------------------------->
+                <div>
+                    <label class="intitule">Je souhaites recevoir par mail :</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="Checkbox" value="">
+                    <label class="missive">La newsletter</label><span> - En vous abonnant, vous
+                        pourrez suivre l'actualité des sorties, les conseils de nos libraires, les dédicaces et
+                        évènements de la librairie.</span>
+                    <p>*Champs obligatoires</p>
+                </div>
+                <div class="validation-button">
+                    <a class="btn btn-dark" href="">Valider</a>
+                </div>
+            </form>
         </div>
-
     </section>
 
     <!--FOOTER-->
@@ -105,7 +147,6 @@
         </div>
     </footer>
 </body>
-
 
 <!--SCRIPT JS----------------------------------------------------------------------------------------->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"

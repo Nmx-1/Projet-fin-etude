@@ -41,11 +41,6 @@ h1, h2{
     word-spacing: 5px;
 }
 
-section{
-    padding: 30px 0 30px 0;
-}
-
-
 /*HEADER
 ====================*/
 i{
@@ -79,7 +74,6 @@ a.nav-link{
     max-width: 500px;
     padding: 30px;
     background-color: white;
-
 }
 
 .form-group{
@@ -95,9 +89,13 @@ a.nav-link{
     margin-right: 10px;  
 }
 
+/*ACCOUNT======================================*/
 
+.dropdown-divider{
+    text-align: center;
+}
 
-/*NEW ACCOUNT==================================*/
+/*NEW-ACCOUNT==================================*/
 
 .intitule, .intitule-required{
     font-weight: bold;
@@ -113,11 +111,17 @@ a.nav-link{
     padding: 12px;
 }
 
+/*PASSWORD================================*/
+
+
+
+
 
 /*FOOTER==================================*/
 
 footer{
     background-color: black;
+    background-size: cover;
     color: white;
     height: 65px;
     padding: 20px;

@@ -71,7 +71,11 @@
         </nav>
     </header>
 
+    <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <!------------------------------------------------COMPTE PERSONNEL------------------------------------------------->
+    <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
     <section>
+        <!--==============================================Sidebar====================================================-->
         <div class="container-fluid">
             <div class="row">
                 <nav class="col-md-2 d-none d-md-block bg-light sidebar">
@@ -80,6 +84,13 @@
                         <hr class="dropdown-divider">
                         <li>Mes commandes</li>
                         <li>Derniers achats</li>
+                    </ul>
+                    <ul>
+                        <h5>Mes envies</h5>
+                        <hr class="dropdown-divider">
+                        <a href="">
+                            <li>Ma liste d'envies</li>
+                        </a>
                     </ul>
                     <ul>
                         <h5>Mon profil</h5>
@@ -95,13 +106,6 @@
                         </a>
                     </ul>
                     <ul>
-                        <h5>Mes envies</h5>
-                        <hr class="dropdown-divider">
-                        <a href="">
-                            <li>Ma liste d'envies</li>
-                        </a>
-                    </ul>
-                    <ul>
                         <h5>Contact</h5>
                         <hr class="dropdown-divider">
                         <a href="">
@@ -112,16 +116,16 @@
                         </a>
                     </ul>
                 </nav>
+                <!--===============================================Main==============================================-->
                 <main class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
                     <h2>Bienvenue</h2>
-                    <hr>
                     <!--/////////////////////////////////////////////////////////////////////////////////////////////-->
-                    <!-------------------------------------------Achat------------------------------------------------->
+                    <!--------------------------------------------Achat------------------------------------------------>
                     <!--/////////////////////////////////////////////////////////////////////////////////////////////-->
                     <section>
                         <div>
                             <div>
-                                <h4>Mes achats</h4>
+                                <h2>Mes achats</h2>
                                 <hr>
                             </div>
                             <div>
@@ -131,57 +135,72 @@
                             <div>
                                 <h4>Mes derniers achats</h4>
                                 <!--===================================Tableau des achats==============================-->
-                                <table>
+                                <table width="100%">
                                     <!--en-tête du tableau-->
-                                    <tr>
-                                        <th>
-                                            <p> N° de commande</p>
-                                        </th>
-                                        <th>
-                                            <p>Date</p>
-                                        </th>
-                                        <th>
-                                            <p>Montant</p>
-                                        </th>
-                                        <th>
-                                            <p>Produits</p>
-                                        </th>
-                                        <th>
-                                            <p>Status</p>
-                                        </th>
-                                    </tr>
+                                        <tr>
+                                            <th>
+                                                <p class="text-table"> N° de commande</p>
+                                            </th>
+                                            <th>
+                                                <p class="text-table">Date</p>
+                                            </th>
+                                            <th>
+                                                <p class="text-table">Montant</p>
+                                            </th>
+                                            <th>
+                                                <p class="text-table">Produits</p>
+                                            </th>
+                                            <th>
+                                                <p class="text-table">Status</p>
+                                            </th>
+                                        </tr>
+                                    
                                     <!--Corps du tableau-->
-                                    <tr>
-                                        <td>
-                                            <p> A123Z1234</p>
-                                        </td>
-                                        <td>
-                                            <p>01/01/2021</p>
-                                        </td>
-                                        <td>
-                                            <p>50,00€</p>
-                                        </td>
-                                        <td>
-                                            <p>1</p>
-                                        </td>
-                                        <td>
-                                            <p>Commande livrée</p>
-                                        </td>
-                                    </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-table"> A123Z1234</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-table">01/01/2021</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-table">50,00€</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-table">1</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-table">Commande livrée</p>
+                                            </td>
+                                        </tr>
+                                    
+                                    
                                 </table>
                             </div>
                         </div>
                     </section>
 
                     <!--/////////////////////////////////////////////////////////////////////////////////////////////-->
-                    <!-------------------------------------------Profil------------------------------------------------>
+                    <!----------------------------------------Coup de Coeur-------------------------------------------->
                     <!--/////////////////////////////////////////////////////////////////////////////////////////////-->
+
+                    <section>
+
+                    </section>
+
+                    <!--/////////////////////////////////////////////////////////////////////////////////////////////-->
+                    <!--------------------------------------------Profil----------------------------------------------->
+                    <!--/////////////////////////////////////////////////////////////////////////////////////////////-->
+                    
+                    <!--=========================================Identité============================================-->
                     <section>
                         <hr>
-                        <h4>Informations personnelles</h4>
+                        <h2>Profil</h2>
                         <hr>
-                        <!--===========================================Identité=====================================-->
-                        <section>
+                        <div>
+                            <h4>Informations personnelles</h4>
+                            <hr>
+                        </div>
                             <div>
                                 <form>
                                     <!--Choix 1-->
@@ -189,38 +208,38 @@
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="inlineRadioOptions"
                                             id="inlineRadio1" value="option1">
-                                        <label class="form-check-label" for="inlineRadio1">Monsieur</label>
+                                        <label class="form-check-label" for="inlineRadio1">Madame</label>
                                     </div>
                                     <!--Choix 2-->
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="inlineRadioOptions"
                                             id="inlineRadio2" value="option2">
-                                        <label class="form-check-label" for="inlineRadio2">Madame</label>
+                                        <label class="form-check-label" for="inlineRadio2">Mademoiselle</label>
                                     </div>
                                     <!--Choix 3-->
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="inlineRadioOptions"
                                             id="inlineRadio3" value="option3">
-                                        <label class="form-check-label" for="inlineRadio3">Mademoiselle</label>
+                                        <label class="form-check-label" for="inlineRadio3">Monsieur</label>
                                     </div>
-                                    <!--==========================Nom, prenom et age=================================-->
+                                    <!--Nom, prenom et age-->
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Nom*</label>
+                                        <label>Nom*</label>
                                         <input type="text" class="form-control" placeholder="Dupont">
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputPassword1">Prénom*</label>
+                                        <label>Prénom*</label>
                                         <input type="text" class="form-control" placeholder="Pierre">
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputPassword1">Date de naissance</label>
+                                        <label>Date de naissance</label>
                                         <input type="text" class="form-control" placeholder="jj/mm/aaaa">
                                     </div>
                                 </form>
                             </div>
-                        </section>
-                        <!--====================================Adresse de facturation===============================-->
-                        <section>
+                    </section>
+                    <!--=====================================Adresse de facturation==================================-->
+                    <section>
                             <h4>Adresse de facturation </h4>
                             <div class="form-group">
                                 <!--Selection du pays-->
@@ -1017,11 +1036,11 @@
                                     <a class="btn btn-dark" href="">Enregistrer les changements</a>
                                 </div>
                         </section>
-                        <!--==================================Identifiants et mot de passe===========================-->
-                        <section>
+                    <!--==================================Identifiants et mot de passe===============================-->
+                    <section>
                             <div class="row">
                                 <div class=col-md-12>
-                                    <hr>
+
                                     <h4>Identifiants et mot de passe</h4>
                                     <hr>
                                     <!--Modification du mot de passe-->
@@ -1032,14 +1051,14 @@
                                         <div>
                                             <label>Mot de passe actuel*:</label>
                                             <div class="input-group mb-3">
-                                                <input type="text" class="form-control">
+                                                <input type="password" maxlength="20" class="form-control">
                                                 <button class="btn btn-outline"><i class="far fa-eye"></i></button>
                                             </div>
                                         </div>
                                         <div>
                                             <label>Nouveau mot de passe*:</label>
                                             <div class="input-group mb-3">
-                                                <input type="text" class="form-control">
+                                                <input type="password" maxlength="20" class="form-control">
                                                 <button class="btn btn-outline"><i class="far fa-eye"></i></button>
                                             </div>
                                         </div>
@@ -1054,13 +1073,13 @@
                                             <label>Email*:</label>
                                             <div class="input-group mb-3">
                                                 <input type="email" class="form-control">
-                                            <button class="btn btn-outline">Modifier</button>
-                                                </div>
+                                                <button class="btn btn-outline">Modifier</button>
+                                            </div>
                                         </div>
                                         <div>
                                             <label>Téléphone*:</label>
-                                        <div class="input-group mb-3">
-                                                <input type="tel" maxlength="10" class="form-control">
+                                            <div class="input-group mb-3">
+                                                <input type="tel" maxlength="14" class="form-control">
                                                 <button class="btn btn-outline">Modifier</button>
                                             </div>
                                             <p>*Champs obligatoires</p>
@@ -1068,14 +1087,21 @@
                                     </form>
                                 </div>
                             </div>
-                        </section>
-                        <!--======================================Suppression de compte==============================-->
-                        <section>
-                            <hr>
+                    </section>
+                    <!--======================================Suppression de compte==================================-->
+                    <section>
                             <h4>Supprimer mon compte</h4>
                             <hr>
                             <form>
-                                <span></span>
+                                <!--Mise en garde-->
+                                <div class="alert alert-danger" role="alert">
+                                    <img src="/ressources/gallery/warning.png" height="23px" alt=""> Si vous êtes sûr de
+                                    vouloir supprimer votre compte, entrez votre adresse mail et
+                                    votre mot de passe ci-dessous.
+                                    La suppression totale et définitive de votre compte prendra effet à l'issue d'un
+                                    délai de 30 jours. Vos données personnelles sont quant à elles conservées durant 90
+                                    jours.
+                                </div>
                                 <div class="form-group">
                                     <label>Adresse mail*</label>
                                     <input type="email" class="form-control">
@@ -1083,16 +1109,142 @@
                                 <div class="form-group">
                                     <label>Mot de passe*</label>
                                     <input type="text" class="form-control">
-
                                 </div>
-
+                                <!---->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label">
+                                        Oui, je souhaite supprimer <b>définitivement</b> mon compte.
+                                    </label>
+                                </div>
+                                <div class="connect-button">
+                                    <a class="btn btn-dark" href="">Supprimer mon compte</a>
+                                </div>
                             </form>
-
-                        </section>
                     </section>
 
-                </main>
+                    <!--/////////////////////////////////////////////////////////////////////////////////////////////-->
+                    <!---------------------------------------------Contact--------------------------------------------->
+                    <!--/////////////////////////////////////////////////////////////////////////////////////////////-->
 
+                    <!--===================================Formulaire de contact=====================================-->
+                    <section>
+                        <h2>Contact</h2>
+                        <hr>
+                        <form>
+                            <div>
+                                <h4>Nous joindre</h4>
+                                <hr>
+                            </div>
+                            <div class="form-group">
+                                <label>Email*</label>
+                                <input type="mail" required class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Nom*</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Téléphone*</label>
+                                <input type="text" maxlength="10" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Objet*</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div>
+                                <label>Votre message*</label>
+                                <div class="form-group">
+                                    <textarea rows="5" minlength="40" maxlength="280"></textarea>
+                                </div>
+                                <div class="connect-button">
+                                    <a class="btn btn-dark" href="">Envoyer</a>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                    <!--============================================FAQ==============================================-->
+                    <section>
+                        <h4>Foire aux questions</h4>
+                        <hr>
+                        <div class="card-qa">
+                            <!--Question 1-->
+                            <div class="card-header">
+                                <b>Questions/réponses spéciales Covid-19</b>
+                            </div>
+                            <!--Réponse 1-->
+                            <div class="card-body">
+                                <b>Puis-je à nouveau aller retirer mes commandes chez vous ?</b>
+                                Oui, nous sommes désormais ouvert mais dans le respect des règles de sécurités
+                                sanitaires nécessaire à la prévention des risques des salariés et des clients. N'hésitez
+                                pas à nous contacter pour plus d'informations à ce sujet.
+                                <hr>
+                                <b>Les délais de mise à disposition des commandes sont-ils plus long qu'en situation
+                                normale ?</b>
+                                Oui, les délais d'acheminement des commandes restent pour l’instant un peu plus longs
+                                qu'en temps normal, le temps que les fournisseurs, livreurs et tous les acteurs de la
+                                chaîne se remettent en ordre de marche suite au confinement. Merci de votre
+                                compréhension.
+                            </div>
+                        </div>
+                        <div class="card-qa">
+                            <!--Question 2-->
+                            <div class="card-header">
+                                <b>Puis-je recevoir ma commande directement à mon domicile ?</b> 
+                            </div>
+                            <!--Réponse 2-->
+                            <div class="card-body">
+                                Oui nous pratiquons la livraison à domicile avec une participation aux frais de port.
+                            </div>
+                        </div>
+                        <div class="card-qa">
+                            <!--Question 3-->
+                            <div class="card-header">
+                                <b>Facturez-vous des frais de port ?</b> 
+                            </div>
+                            <!--Réponse 3-->
+                            <div class="card-body">
+                                Pour le consommateur résidant en France métropolitaine, toute commande passée sur notre
+                                site sera à retirer gratuitement chez un point libraire.
+                                Pour les livraisons à domicile, nous appliquons une participation aux frais de port de
+                                5,00 € pour toutes commandes livrées en France Métropolitaine
+                                Pour le consommateur résidant à l'étranger, et hors France métropolitaine, toute
+                                commande passée sur le site lui sera livrée à son domicile. Les frais de port,
+                                expressément stipulés lors de sa commande, seront à sa charge.
+                            </div>
+                        </div>
+                            <div class="card-qa">
+                                <!--Question 4-->
+                                <div class="card-header">
+                                    <b>Quand mon compte est-il débité du montant de ma commande ?</b>  
+                                </div>
+                                <!--Réponse 4-->
+                                <div class="card-body">
+                                    Nous avons choisi paybox comme système de paiement sécurisé. Le système mis en place
+                                    sur ce site permet de ne débiter le compte du client qu'à l'expédition de la commande chez le point libraire sélectionné.
+                                    Si le paiement de la commande s'effectue par E-card, le compte du client est débité
+                                    à la validation de la commande.
+                                </div>
+                            </div>
+                        
+                        <div class="card-qa">
+                            <!--Question 5-->
+                            <div class="card-header">
+                                <b>En cas de réclamation, à qui dois-je m'adresser ?</b> 
+                            </div>
+                            <!--Réponse 5-->
+                            <div class="card-body">
+                                Notre service après vente est accessible en utilisant notre formulaire contact.
+                                Soyez précis dans votre demande en rappelant le numéro de votre commande.
+                            </div>
+                        </div>
+                        <!--Bouton haut de page-->
+                        <div>
+                            <a class="btn btn-top" href="#top"><i class="fas fa-arrow-circle-up fa-lg"></i>Haut de page</a>
+                        </div>
+                    
+                    </section>
+                </main>
             </div>
         </div>
 
@@ -1100,7 +1252,14 @@
 
 
     </section>
-
+    <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <!--------------------------------------------------FOOTER--------------------------------------------------------->
+    <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <footer>
+        <div class="copyright">
+            La Librairie - 2021. <a href="">Mentions légales</a>
+        </div>
+    </footer>
 </body>
 
 <!--SCRIPT JS----------------------------------------------------------------------------------------->

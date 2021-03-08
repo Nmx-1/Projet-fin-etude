@@ -97,14 +97,40 @@ a.nav-link{
 
 /*ACCOUNT======================================*/
 
+ul{
+    list-style-type: none;
+    text-align: left;
+}
+
+.hr-password{
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 .form-check{
     padding: 20px;
 }
 
-.text-table{
+table{
+    width:60%;
     text-align: center;
+
 }
 
+/*CONTACT*/
+textarea{
+    width: 25em;
+    resize:block
+}
+
+/*FAQ*/
+
+.card-qa{
+background-color:rgb(228, 228, 228);
+margin-bottom: 15px;
+}
 
 /*NEW-ACCOUNT==================================*/
 
@@ -114,6 +140,18 @@ h4{
 
 nav{
     padding: 25px;
+}
+
+.banner{
+background-image: url(/ressources/gallery/banner.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+height:100vh ;
+}
+
+.menu-text{
+    color:rgb(255, 255, 255);
+    text-align: center;
 }
 
 .intitule, .intitule-required{
@@ -139,23 +177,6 @@ padding: 10px;
 .form-group.box{
     margin-bottom: 2em;
 }
-
-/*CONTACT==============================*/
-textarea{
-    width: 25em;
-    resize:block
-}
-
-/*FAQ*/
-
-.card-qa{
-background-color:rgb(228, 228, 228);
-margin-bottom: 15px;
-}
-
-
-
-
 
 
 /*FOOTER==================================*/

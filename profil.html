@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Icons--------------------------------------------------------------------------------------->
+    <script src="https://kit.fontawesome.com/995ae30709.js" crossorigin="anonymous"></script>
+    <!--Styles-------------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="/ressources/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nouveautés</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Catégories
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Littérature & Fiction</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">BD & Jeunesse</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Art & Culture</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Scolaire & Universitaire</a></li>
+                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="connection.html"><i class="fas fa-user"></i>Connexion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=""><i class="fas fa-cart-arrow-down"></i> Mon
+                                Panier</a>
+                        </li>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <!------------------------------------------------COMPTE PERSONNEL------------------------------------------------->
+    <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <section>
+        <!--==============================================Sidebar====================================================-->
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                    <ul>
+                        <h5>Mes achats</h5>
+                        <hr class="dropdown-divider">
+                        <a href="">
+                            <li>Mes commandes</li>
+                        </a>
+                        <a href="">
+                            <li>Derniers achats</li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <h5>Mon profil</h5>
+                        <hr class="dropdown-divider">
+                        <a href="/profil.html">
+                            <li> Informations personnelles</li>
+                        </a>
+                        <a href="/id.html">
+                            <li>Identifiant et mot de passe</li>
+                        </a>
+                        <a href="/delete.html">
+                            <li>Supprimer mon compte</li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <h5>Contact</h5>
+                        <hr class="dropdown-divider">
+                        <a href="">
+                            <li>Nous joindre</li>
+                        </a>
+                        <a href="">
+                            <li>Foire aux questions</li>
+                        </a>
+                    </ul>
+                </nav>
+                <!--===============================================Main==============================================-->
+                <main class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+                    <!--/////////////////////////////////////////////////////////////////////////////////////////////-->
+                    <!--------------------------------------------Profil----------------------------------------------->
+                    <!--/////////////////////////////////////////////////////////////////////////////////////////////-->
+                    
+                    <!--=========================================Identité============================================-->
+                    <section>
+                        <div>
+                            <h2>Informations personnelles</h2>
+                            <hr>
+                        </div>
+                            <div>
+                                <div>
+                                    <h4>Mon identité</h4>
+                                    <hr>
+                                </div>
+                                <form>
+                                    <!--Choix 1-->
+                                    <label>Civilité* :</label>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">Madame</label>
+                                    </div>
+                                    <!--Choix 2-->
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">Mademoiselle</label>
+                                    </div>
+                                    <!--Choix 3-->
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio3" value="option3">
+                                        <label class="form-check-label" for="inlineRadio3">Monsieur</label>
+                                    </div>
+                                    <!--Nom, prenom et age-->
+                                    <div class="form-group">
+                                        <label>Nom*</label>
+                                        <input type="text" class="form-control" placeholder="Dupont">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Prénom*</label>
+                                        <input type="text" class="form-control" placeholder="Pierre">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Date de naissance</label>
+                                        <input type="text" class="form-control" placeholder="jj/mm/aaaa">
+                                    </div>
+                                </form>
+                            </div>
+                    </section>
+                    <!--=====================================Adresse de facturation==================================-->
+                    <section>
+                            <h4>Adresse de facturation </h4>
+                            <hr>
+                            <div class="form-group">
+                                <!--Selection du pays-->
+                                <label>Pays*</label>
+                                <select id="country" name="country" value="FRA" class="a-form_select_input">
+
+                                    <option value="AFG" indicatif="93">
+                                        AFGHANISTAN
+                                    </option>
+
+                                    <option value="ZAF" indicatif="27">
+                                        AFRIQUE DU SUD
+                                    </option>
+
+                                    <option value="DZA" indicatif="213">
+                                        ALGÉRIE
+                                    </option>
+
+                                    <option value="DEU" indicatif="49">
+                                        ALLEMAGNE
+                                    </option>
+
+                                    <option value="AND" indicatif="376">
+                                        ANDORRE
+                                    </option>
+
+                                    <option value="AGO" indicatif="244">
+                                        ANGOLA
+                                    </option>
+
+                                    <option value="SAU" indicatif="966">
+                                        ARABIE SAOUDITE
+                                    </option>
+
+                                    <option value="ARG" indicatif="54">
+                                        ARGENTINE
+                                    </option>
+
+                                    <option value="ARM" indicatif="7">
+                                        ARMÉNIE
+                                    </option>
+
+                                    <option value="AUS" indicatif="61">
+                                        AUSTRALIE
+                                    </option>
+
+                                    <option value="AUT" indicatif="43">
+                                        AUTRICHE
+                                    </option>
+
+                                    <option value="BHS" indicatif="1809">
+                                        BAHAMAS
+                                    </option>
+
+                                    <option value="BGD" indicatif="880">
+                                        BANGLADESH
+                                    </option>
+
+                                    <option value="BRB" indicatif="1809">
+                                        BARBADE
+                                    </option>
+
+                                    <option value="BEL" indicatif="32">
+                                        BELGIQUE
+                                    </option>
+
+                                    <option value="BMU" indicatif="1809">
+                                        BERMUDES
+                                    </option>
+
+                                    <option value="MMR" indicatif="95">
+                                        BIRMANIE (MYAN)
+                                    </option>
+
+                                    <option value="BOL" indicatif="591">
+                                        BOLIVIE
+                                    </option>
+
+                                    <option value="BIH" indicatif="387">
+                                        BOSNIE-HERZ.
+                                    </option>
+
+                                    <option value="BWA" indicatif="267">
+                                        BOTSWANA
+                                    </option>
+
+                                    <option value="BRN" indicatif="673">
+                                        BRUNÉI
+                                    </option>
+
+                                    <option value="BRA" indicatif="55">
+                                        BRÉSIL
+                                    </option>
+
+                                    <option value="BGR" indicatif="359">
+                                        BULGARIE
+                                    </option>
+
+                                    <option value="BFA" indicatif="226">
+                                        BURKINA FASO
+                                    </option>
+
+                                    <option value="BDI" indicatif="257">
+                                        BURUNDI
+                                    </option>
+
+                                    <option value="BEN" indicatif="229">
+                                        BÉNIN
+                                    </option>
+
+                                    <option value="KHM" indicatif="855">
+                                        CAMBODGE
+                                    </option>
+
+                                    <option value="CMR" indicatif="237">
+                                        CAMEROUN
+                                    </option>
+
+                                    <option value="CAN" indicatif="1">
+                                        CANADA
+                                    </option>
+
+                                    <option value="CPV" indicatif="238">
+                                        CAP-VERT
+                                    </option>
+
+                                    <option value="CAF" indicatif="236">
+                                        CENTRAFR. (RÉP)
+                                    </option>
+
+                                    <option value="CHL" indicatif="56">
+                                        CHILI
+                                    </option>
+
+                                    <option value="CHN" indicatif="86">
+                                        CHINE
+                                    </option>
+
+                                    <option value="CYP" indicatif="357">
+                                        CHYPRE
+                                    </option>
+
+                                    <option value="COL" indicatif="57">
+                                        COLOMBIE
+                                    </option>
+
+                                    <option value="COM" indicatif="269">
+                                        COMORES
+                                    </option>
+
+                                    <option value="COG" indicatif="242">
+                                        CONGO
+                                    </option>
+
+                                    <option value="PRK" indicatif="82">
+                                        CORÉE DU NORD
+                                    </option>
+
+                                    <option value="KOR" indicatif="82">
+                                        CORÉE DU SUD
+                                    </option>
+
+                                    <option value="CRI" indicatif="506">
+                                        COSTA RICA
+                                    </option>
+
+                                    <option value="HRV" indicatif="385">
+                                        CROATIE
+                                    </option>
+
+                                    <option value="CUB" indicatif="53">
+                                        CUBA
+                                    </option>
+
+                                    <option value="CIV" indicatif="225">
+                                        CÔTE D&#039;IVOIRE
+                                    </option>
+
+                                    <option value="DNK" indicatif="45">
+                                        DANEMARK
+                                    </option>
+
+                                    <option value="DJI" indicatif="253">
+                                        DJIBOUTI
+                                    </option>
+
+                                    <option value="DMA" indicatif="1809">
+                                        DOMINIQUE
+                                    </option>
+
+                                    <option value="EGY" indicatif="20">
+                                        EGYPTE
+                                    </option>
+
+                                    <option value="ARE" indicatif="971">
+                                        EMIRATS ARABES
+                                    </option>
+
+                                    <option value="ECU" indicatif="593">
+                                        EQUATEUR
+                                    </option>
+
+                                    <option value="ESP" indicatif="34">
+                                        ESPAGNE
+                                    </option>
+
+                                    <option value="EST" indicatif="372">
+                                        ESTONIE
+                                    </option>
+
+                                    <option value="USA" indicatif="1">
+                                        ETATS-UNIS
+                                    </option>
+
+                                    <option value="ETH" indicatif="251">
+                                        ETHIOPIE
+                                    </option>
+
+                                    <option value="FJI" indicatif="679">
+                                        FIDJI
+                                    </option>
+
+                                    <option value="FIN" indicatif="358">
+                                        FINLANDE
+                                    </option>
+
+                                    <option value="FRA" indicatif="33" selected>
+                                        FRANCE
+                                    </option>
+
+                                    <option value="GAB" indicatif="241">
+                                        GABON
+                                    </option>
+
+                                    <option value="GMB" indicatif="220">
+                                        GAMBIE
+                                    </option>
+
+                                    <option value="GHA" indicatif="233">
+                                        GHANA
+                                    </option>
+
+                                    <option value="GIB" indicatif="350">
+                                        GIBRALTAR
+                                    </option>
+
+                                    <option value="GRD" indicatif="1809">
+                                        GRENADE
+                                    </option>
+
+                                    <option value="GRL" indicatif="299">
+                                        GROENLAND
+                                    </option>
+
+                                    <option value="GRC" indicatif="30">
+                                        GRÈCE
+                                    </option>
+
+                                    <option value="GLP" indicatif="590">
+                                        GUADELOUPE
+                                    </option>
+
+                                    <option value="GTM" indicatif="502">
+                                        GUATEMALA
+                                    </option>
+
+                                    <option value="GIN" indicatif="224">
+                                        GUINÉE
+                                    </option>
+
+                                    <option value="GNQ" indicatif="240">
+                                        GUINÉE ÉQUATOR.
+                                    </option>
+
+                                    <option value="GNB" indicatif="245">
+                                        GUINÉE-BISSAU
+                                    </option>
+
+                                    <option value="GUY" indicatif="592">
+                                        GUYANE
+                                    </option>
+
+                                    <option value="GUF" indicatif="594">
+                                        GUYANE FRANÇ.
+                                    </option>
+
+                                    <option value="GEO" indicatif="7">
+                                        GÉORGIE
+                                    </option>
+
+                                    <option value="HTI" indicatif="509">
+                                        HAÏTI
+                                    </option>
+
+                                    <option value="HND" indicatif="504">
+                                        HONDURAS
+                                    </option>
+
+                                    <option value="HKG" indicatif="852">
+                                        HONG KONG
+                                    </option>
+
+                                    <option value="HUN" indicatif="36">
+                                        HONGRIE
+                                    </option>
+
+                                    <option value="NFK" indicatif="6723">
+                                        ILE NORFOLK
+                                    </option>
+
+                                    <option value="CYM" indicatif="1809">
+                                        ILES CAÏMANS
+                                    </option>
+
+                                    <option value="COK" indicatif="682">
+                                        ILES COOK
+                                    </option>
+
+                                    <option value="MNP" indicatif="670">
+                                        ILES MARIANNES
+                                    </option>
+
+                                    <option value="IND" indicatif="91">
+                                        INDE
+                                    </option>
+
+                                    <option value="IDN" indicatif="62">
+                                        INDONÉSIE
+                                    </option>
+
+                                    <option value="IRN" indicatif="98">
+                                        IRAN
+                                    </option>
+
+                                    <option value="IRQ" indicatif="964">
+                                        IRAQ
+                                    </option>
+
+                                    <option value="IRL" indicatif="353">
+                                        IRLANDE
+                                    </option>
+
+                                    <option value="ISL" indicatif="354">
+                                        ISLANDE
+                                    </option>
+
+                                    <option value="ISR" indicatif="972">
+                                        ISRAËL
+                                    </option>
+
+                                    <option value="ITA" indicatif="39">
+                                        ITALIE
+                                    </option>
+
+                                    <option value="JAM" indicatif="1809">
+                                        JAMAÏQUE
+                                    </option>
+
+                                    <option value="JPN" indicatif="81">
+                                        JAPON
+                                    </option>
+
+                                    <option value="JOR" indicatif="962">
+                                        JORDANIE
+                                    </option>
+
+                                    <option value="KEN" indicatif="254">
+                                        KENYA
+                                    </option>
+
+                                    <option value="KWT" indicatif="965">
+                                        KOWEIT
+                                    </option>
+
+                                    <option value="LAO" indicatif="856">
+                                        LAOS
+                                    </option>
+
+                                    <option value="LSO" indicatif="266">
+                                        LESOTHO
+                                    </option>
+
+                                    <option value="LVA" indicatif="371">
+                                        LETTONIE
+                                    </option>
+
+                                    <option value="LBN" indicatif="961">
+                                        LIBAN
+                                    </option>
+
+                                    <option value="LBR" indicatif="231">
+                                        LIBERIA
+                                    </option>
+
+                                    <option value="LIE" indicatif="41">
+                                        LIECHTENSTEIN
+                                    </option>
+
+                                    <option value="LTU" indicatif="370">
+                                        LITHUANIE
+                                    </option>
+
+                                    <option value="LUX" indicatif="352">
+                                        LUXEMBOURG
+                                    </option>
+
+                                    <option value="LBY" indicatif="218">
+                                        LYBIE
+                                    </option>
+
+                                    <option value="MAC" indicatif="853">
+                                        MACAO
+                                    </option>
+
+                                    <option value="MKD" indicatif="389">
+                                        MACÉDOINE
+                                    </option>
+
+                                    <option value="MDG" indicatif="261">
+                                        MADAGASCAR
+                                    </option>
+
+                                    <option value="MYS" indicatif="60">
+                                        MALAISIE
+                                    </option>
+
+                                    <option value="MDV" indicatif="960">
+                                        MALDIVES
+                                    </option>
+
+                                    <option value="MLI" indicatif="223">
+                                        MALI
+                                    </option>
+
+                                    <option value="MLT" indicatif="356">
+                                        MALTE
+                                    </option>
+
+                                    <option value="MAR" indicatif="212">
+                                        MAROC
+                                    </option>
+
+                                    <option value="MTQ" indicatif="596">
+                                        MARTINIQUE
+                                    </option>
+
+                                    <option value="MUS" indicatif="230">
+                                        MAURICE (ILE)
+                                    </option>
+
+                                    <option value="MRT" indicatif="222">
+                                        MAURITANIE
+                                    </option>
+
+                                    <option value="MYT" indicatif="269">
+                                        MAYOTTE
+                                    </option>
+
+                                    <option value="MEX" indicatif="52">
+                                        MEXIQUE
+                                    </option>
+
+                                    <option value="MCO" indicatif="377">
+                                        MONACO
+                                    </option>
+
+                                    <option value="MNG" indicatif="976">
+                                        MONGOLIE
+                                    </option>
+
+                                    <option value="MOZ" indicatif="258">
+                                        MOZAMBIQUE
+                                    </option>
+
+                                    <option value="NAM" indicatif="264">
+                                        NAMIBIE
+                                    </option>
+
+                                    <option value="NCL" indicatif="687">
+                                        NELLE CALÉDONIE
+                                    </option>
+
+                                    <option value="NIC" indicatif="505">
+                                        NICARAGUA
+                                    </option>
+
+                                    <option value="NER" indicatif="227">
+                                        NIGER
+                                    </option>
+
+                                    <option value="NGA" indicatif="234">
+                                        NIGERIA
+                                    </option>
+
+                                    <option value="NOR" indicatif="47">
+                                        NORVÈGE
+                                    </option>
+
+                                    <option value="NZL" indicatif="64">
+                                        NVELLE ZÉLANDE
+                                    </option>
+
+                                    <option value="NPL" indicatif="977">
+                                        NÉPAL
+                                    </option>
+
+                                    <option value="OMN" indicatif="968">
+                                        OMAN
+                                    </option>
+
+                                    <option value="UGA" indicatif="256">
+                                        OUGANDA
+                                    </option>
+
+                                    <option value="UZB" indicatif="7">
+                                        OUZBÉKISTAN
+                                    </option>
+
+                                    <option value="PAK" indicatif="92">
+                                        PAKISTAN
+                                    </option>
+
+                                    <option value="PAN" indicatif="507">
+                                        PANAMA
+                                    </option>
+
+                                    <option value="PNG" indicatif="675">
+                                        PAP.NOUV.GUINÉE
+                                    </option>
+
+                                    <option value="PRY" indicatif="595">
+                                        PARAGUAY
+                                    </option>
+
+                                    <option value="NLD" indicatif="31">
+                                        PAYS-BAS
+                                    </option>
+
+                                    <option value="PHL" indicatif="63">
+                                        PHILIPPINES
+                                    </option>
+
+                                    <option value="POL" indicatif="48">
+                                        POLOGNE
+                                    </option>
+
+                                    <option value="PYF" indicatif="689">
+                                        POLYNÉSIE FRAN.
+                                    </option>
+
+                                    <option value="PRI" indicatif="1809">
+                                        PORTO RICO
+                                    </option>
+
+                                    <option value="PRT" indicatif="351">
+                                        PORTUGAL
+                                    </option>
+
+                                    <option value="PER" indicatif="51">
+                                        PÉROU
+                                    </option>
+
+                                    <option value="QAT" indicatif="974">
+                                        QATAR
+                                    </option>
+
+                                    <option value="CZE" indicatif="420">
+                                        REPUBL. TCHEQUE
+                                    </option>
+
+                                    <option value="ROM" indicatif="40">
+                                        ROUMANIE
+                                    </option>
+
+                                    <option value="GBR" indicatif="44">
+                                        ROYAUME UNI
+                                    </option>
+
+                                    <option value="RUS" indicatif="7">
+                                        RUSSIE (FÉD.)
+                                    </option>
+
+                                    <option value="RWA" indicatif="250">
+                                        RWANDA
+                                    </option>
+
+                                    <option value="DOM" indicatif="1809">
+                                        RÉP.DOMINICAINE
+                                    </option>
+
+                                    <option value="REU" indicatif="262">
+                                        RÉUNION
+                                    </option>
+
+                                    <option value="SMR" indicatif="378">
+                                        SAINT-MARIN
+                                    </option>
+
+                                    <option value="SHN" indicatif="290">
+                                        SAINTE-HÉLÈNE
+                                    </option>
+
+                                    <option value="SLB" indicatif="677">
+                                        SALOMON (ILES)
+                                    </option>
+
+                                    <option value="WSM" indicatif="68">
+                                        SAMOA
+                                    </option>
+
+                                    <option value="SYC" indicatif="248">
+                                        SEYCHELLES
+                                    </option>
+
+                                    <option value="SLE" indicatif="232">
+                                        SIERRA LEONE
+                                    </option>
+
+                                    <option value="SGP" indicatif="65">
+                                        SINGAPOUR
+                                    </option>
+
+                                    <option value="SVK" indicatif="421">
+                                        SLOVAQUIE
+                                    </option>
+
+                                    <option value="SVN" indicatif="386">
+                                        SLOVÉNIE
+                                    </option>
+
+                                    <option value="SOM" indicatif="252">
+                                        SOMALIE
+                                    </option>
+
+                                    <option value="SDN" indicatif="249">
+                                        SOUDAN
+                                    </option>
+
+                                    <option value="LKA" indicatif="94">
+                                        SRI LANKA
+                                    </option>
+
+                                    <option value="SPM" indicatif="508">
+                                        ST PIERRE MIQ.
+                                    </option>
+
+                                    <option value="CHE" indicatif="41">
+                                        SUISSE
+                                    </option>
+
+                                    <option value="SUR" indicatif="597">
+                                        SURINAME
+                                    </option>
+
+                                    <option value="SWE" indicatif="46">
+                                        SUÈDE
+                                    </option>
+
+                                    <option value="SWZ" indicatif="268">
+                                        SWAZILAND
+                                    </option>
+
+                                    <option value="SYR" indicatif="963">
+                                        SYRIE
+                                    </option>
+
+                                    <option value="SEN" indicatif="221">
+                                        SÉNÉGAL
+                                    </option>
+
+                                    <option value="TJK" indicatif="7">
+                                        TADJIKISTAN
+                                    </option>
+
+                                    <option value="TZA" indicatif="255">
+                                        TANZANIE
+                                    </option>
+
+                                    <option value="TWN" indicatif="886">
+                                        TAÏWAN
+                                    </option>
+
+                                    <option value="TCD" indicatif="235">
+                                        TCHAD
+                                    </option>
+
+                                    <option value="THA" indicatif="66">
+                                        THAÏLANDE
+                                    </option>
+
+                                    <option value="TGO" indicatif="228">
+                                        TOGO
+                                    </option>
+
+                                    <option value="TTO" indicatif="1809">
+                                        TRINITAD TOBAGO
+                                    </option>
+
+                                    <option value="TUN" indicatif="216">
+                                        TUNISIE
+                                    </option>
+
+                                    <option value="TKM" indicatif="7">
+                                        TURKMÉNISTAN
+                                    </option>
+
+                                    <option value="TCA" indicatif="1809">
+                                        TURKS CAIQUES
+                                    </option>
+
+                                    <option value="TUR" indicatif="90">
+                                        TURQUIE
+                                    </option>
+
+                                    <option value="UKR" indicatif="7">
+                                        UKRAINE
+                                    </option>
+
+                                    <option value="URY" indicatif="598">
+                                        URUGUAY
+                                    </option>
+
+                                    <option value="VUT" indicatif="678">
+                                        VANUATU
+                                    </option>
+
+                                    <option value="VAT" indicatif="39">
+                                        VATICAN
+                                    </option>
+
+                                    <option value="VEN" indicatif="58">
+                                        VENEZUELA
+                                    </option>
+
+                                    <option value="VNM" indicatif="84">
+                                        VIÊT NAM
+                                    </option>
+
+                                    <option value="WLF" indicatif="681">
+                                        WALLIS FUTUNA
+                                    </option>
+
+                                    <option value="YUG" indicatif="381">
+                                        YOUGOSLAVIE
+                                    </option>
+
+                                    <option value="YEM" indicatif="96">
+                                        YÉMEN
+                                    </option>
+
+                                    <option value="ZMB" indicatif="260">
+                                        ZAMBIE
+                                    </option>
+
+                                    <option value="ZAR" indicatif="243">
+                                        ZAÏRE
+                                    </option>
+
+                                    <option value="ZWE" indicatif="263">
+                                        ZIMBABWE
+                                    </option>
+                                </select>
+                                <!--Adresse-->
+                                <div class="billing">
+                                    <div class="form-group">
+                                        <label>Adresse, Numéro et rue*</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Complément d'adresse</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Code postale*</label>
+                                        <input type="text" maxlength="5" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Ville*</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <!--Coordonnées-->
+                                <div class="">
+                                    <div class="form-group">
+                                        <label>*Numéro de téléphone</label>
+                                        <input type="tel" maxlength="10" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>*Email de contact</label>
+                                        <input type="email" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="connect-button">
+                                    <a class="btn btn-dark" href="">Enregistrer les changements</a>
+                                </div>
+                    </section>
+                </main>
+
+    <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <!--------------------------------------------------FOOTER--------------------------------------------------------->
+    <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <footer>
+        <div class="copyright">
+            La Librairie - 2021. <a href="">Mentions légales</a>
+        </div>
+    </footer>
+</body>
+
+<!--SCRIPT JS----------------------------------------------------------------------------------------->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+    integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+    integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous">
+</script>
+
+</html>

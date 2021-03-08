@@ -79,7 +79,6 @@
         <div class="container-fluid">
             <div class="row">
                 <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-                    <h3>Mon Espace</h3>
                     <ul>
                         <h5>Mes achats</h5>
                         <hr class="dropdown-divider">
@@ -116,18 +115,67 @@
                 </nav>
                 <!--===============================================Main==============================================-->
                 <main class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
-                    <div class="banner">
-                        <div class="menu-text">
-                            <h2>Bienvenue</h2>
-                        </div>
-
-                    </div>
-
-                    <div>
-
-                    </div>
+                    <!--/////////////////////////////////////////////////////////////////////////////////////////////-->
+                    <!--------------------------------------------Profil----------------------------------------------->
+                    <!--/////////////////////////////////////////////////////////////////////////////////////////////-->
+                    
+                    <!--==================================Identifiants et mot de passe===============================-->
+                    <section>
+                            <div class="row">
+                                <div class=col-md-12>
+                                    <h2>Identifiants et mot de passe</h2>
+                                    <hr>
+                                    <!--Modification du mot de passe-->
+                                    <form>
+                                        <div>
+                                            <b>Modifier mon mot de passe</b>
+                                        </div>
+                                        <div>
+                                            <label>Mot de passe actuel*:</label>
+                                            <div class="input-group mb-3">
+                                                <input type="password" maxlength="20" class="form-control">
+                                                <button class="btn btn-outline"><i class="far fa-eye"></i></button>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label>Nouveau mot de passe*:</label>
+                                            <div class="input-group mb-3">
+                                                <input type="password" maxlength="20" class="form-control">
+                                                <button class="btn btn-outline"><i class="far fa-eye"></i></button>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a class="btn btn-secondary" href="">Annuler</a>
+                                            <a class="btn btn-dark btn-block" href="">Valider</a>
+                                        </div>
+                                        <hr class="hr-password">
+                                        <!--Modification des ID de connexion-->
+                                        <div>
+                                            <b>Gérer mes identifiants de connexion</b>
+                                        </div>
+                                        <div>
+                                            <label>Email*:</label>
+                                            <div class="form-group">
+                                                <input type="email" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label>Téléphone*:</label>
+                                            <div class="form-group">
+                                                <input type="tel" maxlength="14" class="form-control">
+                                            </div>
+                                            <p>*Champs obligatoires</p>
+                                        </div>
+                                        <div  class="ab">
+                                            <a class="btn btn-secondary" href="">Annuler</a>
+                                            <a class="btn btn-dark" href="">Valider</a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                    </section>
                 </main>
-
+    </section>
     <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
     <!--------------------------------------------------FOOTER--------------------------------------------------------->
     <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->

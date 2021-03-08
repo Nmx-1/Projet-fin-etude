@@ -71,63 +71,82 @@
         </nav>
     </header>
 
-    <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-    <!------------------------------------------------COMPTE PERSONNEL------------------------------------------------->
-    <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-    <section>
-        <!--==============================================Sidebar====================================================-->
-        <div class="container-fluid">
-            <div class="row">
-                <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-                    <h3>Mon Espace</h3>
-                    <ul>
-                        <h5>Mes achats</h5>
-                        <hr class="dropdown-divider">
-                        <a href="#">
-                            <li>Mes commandes</li>
-                        </a>
-                        <a href="#">
-                            <li>Derniers achats</li>
-                        </a>
-                    </ul>
-                    <ul>
-                        <h5>Mon profil</h5>
-                        <hr class="dropdown-divider">
-                        <a href="/profil.html">
-                            <li> Informations personnelles</li>
-                        </a>
-                        <a href="/id.html">
-                            <li>Identifiant et mot de passe</li>
-                        </a>
-                        <a href="/delete.html">
-                            <li>Supprimer mon compte</li>
-                        </a>
-                    </ul>
-                    <ul>
-                        <h5>Contact</h5>
-                        <hr class="dropdown-divider">
-                        <a href="/contact.html">
-                            <li>Nous joindre</li>
-                        </a>
-                        <a href="/faq.html">
-                            <li>Foire aux questions</li>
-                        </a>
-                    </ul>
-                </nav>
-                <!--===============================================Main==============================================-->
-                <main class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
-                    <div class="banner">
-                        <div class="menu-text">
-                            <h2>Bienvenue</h2>
-                        </div>
+    <!--======================================Suppression de compte==================================-->
+    <!--==============================================Sidebar====================================================-->
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <ul>
+                    <h5>Mes achats</h5>
+                    <hr class="dropdown-divider">
+                    <a href="#">
+                        <li>Mes commandes</li>
+                    </a>
+                    <a href="#">
+                        <li>Derniers achats</li>
+                    </a>
+                </ul>
+                <ul>
+                    <h5>Mon profil</h5>
+                    <hr class="dropdown-divider">
+                    <a href="/profil.html">
+                        <li> Informations personnelles</li>
+                    </a>
+                    <a href="/id.html">
+                        <li>Identifiant et mot de passe</li>
+                    </a>
+                    <a href="/delete.html">
+                        <li>Supprimer mon compte</li>
+                    </a>
+                </ul>
+                <ul>
+                    <h5>Contact</h5>
+                    <hr class="dropdown-divider">
+                    <a href="/contact.html">
+                        <li>Nous joindre</li>
+                    </a>
+                    <a href="/faq.html">
+                        <li>Foire aux questions</li>
+                    </a>
+                </ul>
+            </nav>
 
-                    </div>
 
-                    <div>
-
-                    </div>
-                </main>
-
+    <!--===============================================Main==============================================-->
+    <main class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4"> 
+        <h2>Supprimer mon compte</h2>
+        <hr>
+        <form>
+            <!--Mise en garde-->
+            <div class="alert alert-danger" role="alert">
+                <img src="/ressources/gallery/warning.png" height="23px" alt=""> Si vous êtes sûr de
+                vouloir supprimer votre compte, entrez votre adresse mail et
+                votre mot de passe ci-dessous.
+                La suppression totale et définitive de votre compte prendra effet à l'issue d'un
+                délai de 30 jours. Vos données personnelles sont quant à elles conservées durant 90
+                jours.
+            </div>
+            <div class="form-group">
+                <label>Adresse mail*</label>
+                <input type="email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Mot de passe*</label>
+                <input type="text" class="form-control">
+            </div>
+            <!---->
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox">
+                <label class="form-check-label">
+                    Oui, je souhaite supprimer <b>définitivement</b> mon compte.
+                </label>
+            </div>
+            <div class="connect-button">
+                <a class="btn btn-dark" href="">Supprimer mon compte</a>
+            </div>
+        </form>
+    </main>
+    
     <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
     <!--------------------------------------------------FOOTER--------------------------------------------------------->
     <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->

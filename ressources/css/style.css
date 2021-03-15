@@ -26,168 +26,222 @@
     2. =HEADER
 */
 
-/*GLOBAL
+    /*GLOBAL
 =========================*/
 
-html{
-    background-color: white;
-    height: 100%;
+    html {
+        background-color: white;
+    }
+
+    h1,
+    h2 {
+        font-family: 'Arial', 'sans-serif';
+        text-transform: uppercase;
+        letter-spacing: -1px;
+        font-weight: 300;
+        word-spacing: 5px;
+    }
+
+    h2 {
+        padding: 20px 0px 2px 0;
+    }
+
+    /*HEADER
+=================================================*/
+    i {
+        margin-right: 5px;
+    }
+
+    a.nav-link {
+        color: white;
+    }
+
+/*SIDEBAR
+=================================================*/
+
+.sidebarMenu {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
 }
 
-
-h1, h2{
-    font-family: 'Arial', 'sans-serif' ;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-    font-weight: 300;
-    word-spacing: 5px;
+.sidebarMenu:hover {
+    color: rgb(20, 40, 200)
+    ;
+    background-color: transparent;
+    text-decoration: underline;
 }
 
-h2{
-    padding: 20px 0px 2px 0;
-}
-
-/*HEADER
-====================*/
-i{
-    margin-right: 5px;
-}
-
-a.nav-link{
-    color: white;
-}
-
-/*CONNECTION======================*/
-
-.application{
-    background-image: url(/ressources/gallery/books2.jpg);
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-}
-
-.connection{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 80px;
-    
-}
-
-.form-signin{
-    width: 100%;
-    max-width: 500px;
-    padding: 30px;
-    background-color: white;
-}
-
-.form-group{
+.navTitle{
+    text-align: center;
     padding: 5px;
 }
 
-.forgotpassword{
-    color: rgb(112, 112, 112);
-}
-
-.connect-button{
-    margin-top: 10px;
-    margin-right: 10px;  
-}
-
-/*ACCOUNT======================================*/
-
-ul{
-    list-style-type: none;
-    text-align: left;
-}
-
-.hr-password{
-    width: 70%;
-    margin: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-.form-check{
-    padding: 20px;
-}
-
-table{
-    width:60%;
-    text-align: center;
-
-}
-
-/*CONTACT*/
-textarea{
-    width: 25em;
-    resize:block
-}
-
-/*FAQ*/
-
-.card-qa{
-background-color:rgb(228, 228, 228);
-margin-bottom: 15px;
-}
-
-/*NEW-ACCOUNT==================================*/
-
-h4{
-    padding: 20px 0 2px 0;
-}
-
-nav{
-    padding: 25px;
-}
-
-.banner{
-background-image: url(/ressources/gallery/banner.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-height:100vh ;
-}
-
-.menu-text{
-    color:rgb(255, 255, 255);
-    text-align: center;
-}
-
-.intitule, .intitule-required{
-    font-weight: bold;
-    padding: 12px;
-}
-
-.missive{
-    font-weight: bold;
-}
-
-.validation-button{
-    padding: 12px;
-}
-
-.btn.btn-top{
-padding: 10px;
-}
-
-
-
-/*PASSWORD================================*/
-.form-group.box{
-    margin-bottom: 2em;
-}
-
-
-/*FOOTER==================================*/
-
-footer{
-    background-color: black;
-    background-size: cover;
+.navsubTitle{
+    background-color: rgb(30, 30, 30);
     color: white;
-    height: 65px;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20%;
 }
 
+    /*CONNECTION
+=================================================*/
+
+    .application {
+        background-image: url(/ressources/gallery/books2.jpg);
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .connection {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 80px;
+    }
+
+    .form-signin {
+        width: 100%;
+        max-width: 500px;
+        padding: 30px;
+        background-color: white;
+    }
+
+    .form-group {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .forgotpassword {
+        color: rgb(112, 112, 112);
+    }
+
+    .connect-button {
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    /*ACCOUNT======================================*/
+
+    ul {
+        list-style-type: none;
+        text-align: left;
+    }
+
+
+    .hr-password {
+        width: 70%;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .form-check {
+        padding: 20px;
+    }
+
+    table {
+        width: 60%;
+        text-align: center;
+
+    }
+
+    /*PURCHASE*/
+
+    .info-details {
+        border: 1px solid;
+        width: 100%;
+    }
+
+    .purchase {
+        border: 1px solid;
+    }
+
+    .paperback {
+        height: 17em;
+        width: 14em;
+        padding: 10%;
+    }
+
+    td:nth-child(odd) {
+        background-color: rgba(83, 83, 22, 0.38);
+    }
+
+    th:nth-child(odd) {
+        background-color: rgba(83, 83, 22, 0.38);
+    }
+
+    /*ID*/
+
+    .validateCancel a {
+        margin: 20px;
+    }
+
+    /*CONTACT*/
+    textarea {
+        width: 25em;
+        resize: block
+    }
+
+    /*FAQ*/
+
+    .card-qa {
+        background-color: rgb(228, 228, 228);
+        margin-bottom: 15px;
+    }
+
+    /*NEW-ACCOUNT==================================*/
+
+    h4 {
+        padding: 20px 0 2px 0;
+    }
+
+
+    .banner {
+        background-image: url(/ressources/gallery/banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .menu-text {
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+
+    .intitule,
+    .intitule-required {
+        font-weight: bold;
+        padding: 12px;
+    }
+
+    .missive {
+        font-weight: bold;
+    }
+
+    .validation-button {
+        padding: 12px;
+    }
+
+    .btn.btn-top {
+        padding: 10px;
+    }
+
+
+
+    /*PASSWORD================================*/
+
+    .form-group.box {
+        margin-bottom: 2em;
+    }
+
+
+    /*FOOTER==================================*/
+
+    footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 30px;
+        margin-top: 30px;
+    }

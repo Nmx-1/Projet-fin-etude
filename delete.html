@@ -71,41 +71,44 @@
         </nav>
     </header>
 
-    <!--======================================Suppression de compte==================================-->
+    <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <!-------------------------------------------Suppression de compte------------------------------------------------->
+    <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    
     <!--==============================================Sidebar====================================================-->
     <div class="container-fluid">
         <div class="row">
             <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="navTitle">
+                    <h4><a class="sidebarMenu" href="account.html">Mon Espace</a></h4>
+                </div>
                 <ul>
-                    <h5>Mes achats</h5>
-                    <hr class="dropdown-divider">
-                    <a href="#">
+                    <h5 class="navsubTitle">Mes achats</h5>
+                    <a class="sidebarMenu" href="/orders.html">
                         <li>Mes commandes</li>
                     </a>
-                    <a href="#">
+                    <a class="sidebarMenu" href="/purchase.html">
                         <li>Derniers achats</li>
                     </a>
                 </ul>
                 <ul>
-                    <h5>Mon profil</h5>
-                    <hr class="dropdown-divider">
-                    <a href="/profil.html">
+                    <h5 class="navsubTitle">Mon profil</h5>
+                    <a class="sidebarMenu" href="/profil.html">
                         <li> Informations personnelles</li>
                     </a>
-                    <a href="/id.html">
+                    <a class="sidebarMenu" href="/id.html">
                         <li>Identifiant et mot de passe</li>
                     </a>
-                    <a href="/delete.html">
+                    <a class="sidebarMenu" href="/delete.html">
                         <li>Supprimer mon compte</li>
                     </a>
                 </ul>
                 <ul>
-                    <h5>Contact</h5>
-                    <hr class="dropdown-divider">
-                    <a href="/contact.html">
+                    <h5 class="navsubTitle">Contact</h5>
+                    <a class="sidebarMenu" href="/contact.html">
                         <li>Nous joindre</li>
                     </a>
-                    <a href="/faq.html">
+                    <a class="sidebarMenu" href="/faq.html">
                         <li>Foire aux questions</li>
                     </a>
                 </ul>
@@ -141,11 +144,14 @@
                     Oui, je souhaite supprimer <b>définitivement</b> mon compte.
                 </label>
             </div>
-            <div class="connect-button">
+            <div class="deleteButton"></div>
                 <a class="btn btn-dark" href="">Supprimer mon compte</a>
             </div>
         </form>
     </main>
+    
+
+    
     
     <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
     <!--------------------------------------------------FOOTER--------------------------------------------------------->

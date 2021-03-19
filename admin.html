@@ -5,17 +5,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Administration</title>
+    <title> Mon Dashboard</title>
     <!--Icons--------------------------------------------------------------------------------------->
     <script src="https://kit.fontawesome.com/995ae30709.js" crossorigin="anonymous"></script>
     <!--Styles-------------------------------------------------------------------------------------->
     <link rel="stylesheet" href="/ressources/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!--Google Charts------------------------------------------------------------------------------->
+    <!--Pie Chart-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", {
+            packages: ["corechart"]
+        });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['percent', 'type de roman'],
+                ['Fantasy', 25, ],
+                ['Science-Fiction', 17, ],
+                ['Policier/Thriller', 16, ],
+                ['Romantique', 28, ],
+                ['Scolaire', 14, ]
+            ]);
+            var options = {
+                title: 'Livres Vendus/ Catégorie',
+                is3D: true,
+                width: 450,
+                height: 300,
+                colors: ['#127D49', '#17A15E', '#1CC473', '#29E088', '#4CE69C', '#70EBAF']
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+            chart.draw(data, options);
+        }
+    </script>
+    <!--Column Chart-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", {
+            packages: ['corechart']
+        });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Mois', 'Personnes', {
+                    role: 'style'
+                }],
+                ['Janvier 2020', 61, 'color:#1CC473'],
+                ['Février 2020', 52, 'color:#1CC473'],
+                ['Mars 2020', 39, 'color:#1CC473'],
+                ['Avril 2020', 0, 'color:#1CC473'],
+                ['Mai 2020', 0, 'color:#1CC473'],
+                ['Juin 2020', 46, 'color:#1CC473'],
+                ['Juillet 2020', 35, 'color:#1CC473'],
+                ['Août 2020', 43, 'color:#1CC473'],
+                ['Septembre 2020', 51, 'color:#1CC473'],
+                ['Octobre 2020', 47, 'color:#1CC473'],
+                ['Novembre 2020', 43, 'color:#1CC473'],
+                ['Décembre 2020', 54, 'color:#1CC473'],
+                ['Janvier 2021', 37, 'color:#1CC473'],
+                ['Février 2021', 36, 'color:#1CC473'],
+            ]);
+
+            var view = new google.visualization.DataView(data);
+            view.setColumns([0, 1,
+                {
+                    calc: "stringify",
+                    sourceColumn: 1,
+                    type: "string",
+                    role: "annotation"
+                },
+                2
+            ]);
+
+            var options = {
+                title: "Nombre de Clients/Mois",
+                width: 450,
+                height: 300,
+                bar: {
+                    groupWidth: "95%"
+                },
+                legend: {
+                    position: "none"
+                },
+            };
+            var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+            chart.draw(view, options);
+        }
+    </script>
+
+
+
+
 </head>
 
 <body>
-    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap">
+    <header class="navbar navbar-dark sticky-top flex-md-nowrap" style="background-color: #003844;">
         <a class="navbar-brand col-lg-2 px-3" href="#">La Librairie</a>
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
@@ -25,26 +114,139 @@
         <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
         <ul class="navbar-nav px-3">
             <li class="nav-item text-nowrap">
-                <a class="nav-link" href="#">Sign out</a>
+                <a class=" btn btn-outline-light" href="/connection.html">Deconnexion</a>
             </li>
         </ul>
     </header>
 
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block sidebar" style="background-color: #003844;">
+                <div class="dashboard">
+                    <ul>
+                        <h5 class="dashboard-title">Tableau</h5>
+                    </ul>
+                    <ul>
+                        <h5 class="dashboard-title">Utilisateurs</h5>
+                    </ul>
+                    <ul>
+                        <h5 class="dashboard-title">Livres</h5>
+                </div>
 
+            </nav>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+            <main class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4" style="background-color: #006C67;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6" style="margin-top: 10px;">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="bookSold" id="piechart_3d"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6" style="margin-top: 10px;">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="shoppers" id="columnchart_values"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card" style="margin-bottom: 30px;">
+                                <div class="card-body">
+                                    <h3>Ajout de livres</h3>
+                                    <table class="table table-success table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Nom</th>
+                                                <th scope="col">Auteur</th>
+                                                <th scope="col">Date d'ajout</th>
+                                                <th><button type="button" class="btn btn-sm btn-success">Ajout</button></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>the Adventure of John Smith </td>
+                                                <td>Ken Adams</td>
+                                                <td>22/12/2020</td>
+                                                <td><button type="button" class="btn btn-sm btn-danger">Supprimer</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>The Lovers</td>
+                                                <td>Emiliano Pius</td>
+                                                <td>10/01/2021</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-sm btn-danger">Supprimer</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Aliens</td>
+                                                <td>Marius Sulla</td>
+                                                <td>20/01/2021</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-sm btn-danger">Supprimer</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body" style= "margin-bottom: 15px;">
+                                    <h3>Derniers utilisateurs</h3>
+                                    <table class="table table-success table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Nom</th>
+                                                <th scope="col">Date d'Inscription</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="">
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Alain Térieur</td>
+                                                <td>07/11/2019</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Médhi Khaman</td>
+                                                <td>25/02/2020</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Guy Tard</td>
+                                                <td>09/04/2020</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">4</th>
+                                                <td>Eva Sion</td>
+                                                <td>16/07/2020</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">5</th>
+                                                <td>Lucie Fert</td>
+                                                <td>30/10/2020</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                
+            </main>
 
 </body>
 

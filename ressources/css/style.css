@@ -87,7 +87,7 @@
 
     .application {
         background-image: url(/ressources/gallery/books2.jpg);
-        height: 100vh;
+        height: 100%;
         background-position: center;
         background-size: cover;
     }
@@ -229,19 +229,65 @@
 
 
 
-    /*PASSWORD================================*/
+    /*PASSWORD
+    =========================================*/
 
     .form-group.box {
         margin-bottom: 2em;
     }
 
+    /*ADMIN
+    =====================================*/
+    .dashboard-title{
+        color: white;
+    }
 
-    /*FOOTER==================================*/
 
-    footer {
+    /*FOOTER
+    =============================*/
+
+    .copyright {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 30px;      
+    }
+
+    .footer-account{
         background-color: black;
         color: white;
         text-align: center;
         padding: 30px;
-        margin-top: 30px;
+        margin-top: 20px;
+    }
+
+    .footer-purchase{
+        background-color: black;
+        color: white;
+        text-align: center;
+        size: cover;
+        padding: 30px;
+        margin-top: 60px;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .footer-profil{
+        background-color: black;
+        color: white;
+        text-align: center;
+        size: cover;
+        padding: 30px;
+        margin-top: 15px;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .footer-contact{
+        background-color: black;
+        color: white;
+        text-align: center;
+        size: cover;
+        padding: 30px;
+        margin-top: 15px;
     }
